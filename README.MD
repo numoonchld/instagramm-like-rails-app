@@ -16,6 +16,10 @@
 
 - `rails generate controller Pics`
 
+## Simple Form
+
+- `rails generate simple_form:install --bootstrap`
+
 ## Initial Setup
 
 - Generate ruby app within `web` docker container
