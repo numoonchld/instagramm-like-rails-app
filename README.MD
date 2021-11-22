@@ -12,6 +12,10 @@
 - `rails generate model Pic title:string description:text`
 - `rails db:migrate`
 
+### Pics controller
+
+- `rails generate controller Pics`
+
 ## Initial Setup
 
 - Generate ruby app within `web` docker container
