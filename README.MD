@@ -1,6 +1,16 @@
 ## Usage
 
 - in terminal do `docker-compose up`
+- then, create DB
+  `docker-compose run web rake db:create`
+- go `localhost:5052` to access the application
+
+## Models
+
+### Pic Model
+
+- `rails generate model Pic title:string description:text`
+- `rails db:migrate`
 
 ## Initial Setup
 
