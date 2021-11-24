@@ -9,12 +9,12 @@ class PicsController < ApplicationController
   end
   
   def new
-    @pic = Pic.new
+    @pic = current_user.pics.build
   end
   
   # does not have a view file, responsible for "creation" logic
   def create 
-    @pic = Pic.new(pic_params)
+    @pic = current_user.pics.build(pic_params)
     
     if @pic.save
       redirect_to @pic, notice: "Pic was posted"
